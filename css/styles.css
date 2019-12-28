@@ -1,0 +1,154 @@
+/* Global */
+
+body {
+    margin: 0px;
+    font-family: 'Roboto Slab', serif;
+    background-color: #d3d0e2;
+}
+
+h1, h2, h3{
+    text-align: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+/* Navigation */
+
+nav {
+    width: 100%;
+    margin: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; /* required */
+    background-color: #160d2c;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 16px 24px;
+    display: block;
+    transition: 700ms ease;
+}
+
+nav ul li a:hover {
+    background-color: #d3d0e2;
+    color: #160d2c;
+}
+
+/* Main */
+
+#main{
+    width: 100%;
+    margin: auto;
+}
+
+#main h1 {
+    padding-top: 52px;
+}
+
+#img-div {
+    margin: 0;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+}
+
+#img-caption {
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
+#tribute-info {
+    width: 90%;
+    margin: 16px auto 16px;
+    padding-top: 52px;
+    text-align: justify;
+}
+
+#source {
+    text-align: right;
+}
+
+#tribute-link {
+    color: #160d2c;
+}
+
+#tribute-link:hover {
+    color: rgb(110, 33, 211);
+}
+
+#artists h2 {
+    padding-top: 52px;
+    font-size: 1.8em;
+    margin-bottom: 36px;
+}
+
+#artists-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.artist h3 {
+    margin: 8px 0;
+    font-size: 1.4em;
+}
+
+.artist p {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 8px 0 48px;
+}
+
+.artist img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    padding: 36px;
+    background-color: #160d2c;
+    color: #d3d0e2;
+    margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    #artists-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 16px 16px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    #main {
+        width: 90%
+    }
+
+    #tribute-info {
+        width: 100%;
+    }
+
+    #artists-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 16px 16px;
+    }
+}
